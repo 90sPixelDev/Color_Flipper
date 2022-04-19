@@ -1,0 +1,97 @@
+* {
+  font-family: 'Arial';
+}
+
+html, body, main {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html .container, body .container, main .container {
+  height: 100%;
+  top: 50vw;
+  left: 50vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr 2fr;
+      grid-template-rows: 1fr 2fr;
+  place-items: center;
+}
+
+html .container h1, body .container h1, main .container h1 {
+  text-align: center;
+  padding: 0;
+}
+
+html .container .parent, body .container .parent, main .container .parent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+
+html .container .parent h2, body .container .parent h2, main .container .parent h2 {
+  background-color: rgba(0, 0, 0, 0.25);
+  color: black;
+  padding: 1em;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  border-radius: 1em;
+}
+
+html .container .parent input, body .container .parent input, main .container .parent input {
+  font-size: 16px;
+  background-color: transparent;
+  padding: .7em 1.75em;
+  border: 1px solid black;
+  border-radius: 1em;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+html .container .parent input:hover, body .container .parent input:hover, main .container .parent input:hover {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+#nav-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  min-height: 2em;
+  height: 3%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 18px;
+  background-color: white;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  list-style: none;
+  z-index: 1;
+}
+
+#nav-bar input {
+  padding: 0.5em 1em;
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+}
+/*# sourceMappingURL=style.css.map */
